@@ -46,7 +46,21 @@ html {
     text-shadow: none;
 }
 
+::-webkit-input-placeholder {
+  line-height: 50px;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+  line-height: 50px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  line-height: 50px;  
+}
+
+:-ms-input-placeholder {  
+  line-height: 50px;  
+}
 
 
 /*
@@ -130,6 +144,12 @@ p {
   color: #b55f56;
 }
 
+p #quote1 {
+  font-size: 3rem;
+  text-align: left;
+  color: #b55f56;
+}
+
 .button {
     background-color: transparent;
     border: 1px solid #ffffff;
@@ -137,6 +157,11 @@ p {
 
 }
 
+
+
+.hide {
+  display: none;
+}
 
 /* MODAL PARTY */
 .trigger {
@@ -175,8 +200,8 @@ p {
 
 .overlay-background {
   position: fixed;
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -333,8 +358,8 @@ textarea.question + label > span {
   margin: 0;
   position: absolute;
   color: #b55f56;
-  font-size: 48px;
-  top: -66px;
+  font-size: 50px;
+  top: -50px;
   left: 0px;
   z-index: -1;
   -webkit-transition: color 0.2s ease;
