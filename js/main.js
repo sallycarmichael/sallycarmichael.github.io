@@ -32,9 +32,20 @@ $('input[type="submit"]').on('click', function (e) {
 	// get val from noun1 and store in variable n1
 		var n1 = $('#noun1').val();
 
+
 	// find the element with class noun1 and use html method to update to the n1 variable
 		$('.noun1').html(n1);
 
+
 	// add reveal class to quote1
 		$('#quote1').removeClass('hide');
+
+	// add hide class to .form
+		$('.form').addClass('hide');
+
+	// change background color by adding .bluebg class
+		$('body').addClass('bluebg');
+
+
+
 });
